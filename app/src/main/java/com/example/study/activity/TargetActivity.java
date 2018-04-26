@@ -1,6 +1,5 @@
 package com.example.study.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,13 +9,6 @@ import android.widget.TextView;
 import com.example.study.R;
 
 public class TargetActivity extends AppCompatActivity {
-    private static final String DATA_TAG = "data_tag";
-
-    public static void startAction(Context context) {
-        Intent intent = new Intent(context, TargetActivity.class);
-        intent.putExtra(DATA_TAG, args);
-        context.startActivity(intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
