@@ -28,8 +28,6 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
         findViewById(R.id.btn_implicit_start_dial).setOnClickListener(this);
         findViewById(R.id.btn_implicit_start_web).setOnClickListener(this);
-
-
     }
 
     @Override
@@ -86,14 +84,14 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
             }
             break;
 
-            case R.id.btn_implicit_start_dial: {
+            case R.id.btn_implicit_start_dial: {//拨号
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:10086"));
                 startActivity(intent);
             }
             break;
 
-            case R.id.btn_implicit_start_web: {
+            case R.id.btn_implicit_start_web: {//打开网页
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.baidu.com"));
                 startActivity(intent);
