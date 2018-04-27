@@ -14,12 +14,18 @@
             android:id="@+id/btn_start_activity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="启动activity"/>
+            android:text="启动activity" />
 
         <Button
             android:id="@+id/btn_lifecycle_activity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="生命周期"/>
+            android:text="生命周期" />
+
+        <Button
+            android:id="@+id/btn_mode_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动模式" />
     </LinearLayout>
 </ScrollView>

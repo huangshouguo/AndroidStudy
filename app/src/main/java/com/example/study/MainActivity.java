@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.study.activity.lifecycle.LifecycleActivity;
+import com.example.study.activity.mode.ModeActivity;
 import com.example.study.activity.start.StartActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_start_activity).setOnClickListener(this);
         findViewById(R.id.btn_lifecycle_activity).setOnClickListener(this);
+        findViewById(R.id.btn_mode_activity).setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_lifecycle_activity:
                 LifecycleActivity.startAction(this);
+                break;
+
+            case R.id.btn_mode_activity:
+                ModeActivity.startAction(this);
                 break;
             default:
                 break;

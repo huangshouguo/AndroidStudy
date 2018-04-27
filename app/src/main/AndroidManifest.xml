@@ -29,6 +29,19 @@
         <activity
             android:name=".activity.lifecycle.LifecycleDialogActivity"
             android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity android:name=".activity.mode.ModeActivity" />
+        <activity android:name=".activity.mode.ModeStandardActivity" />
+        <activity
+            android:name=".activity.mode.ModeSingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.mode.ModeSingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.mode.ModeSingleTaskAssitActivity" />
+        <activity
+            android:name=".activity.mode.ModeSingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.mode.ModeSingleInstanceAssitActivity" />
     </application>
 
 </manifest>
