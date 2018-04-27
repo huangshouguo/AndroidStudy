@@ -1,4 +1,4 @@
-package com.example.study.activity;
+package com.example.study.activity.start;
 
 import android.content.Intent;
 import android.net.Uri;

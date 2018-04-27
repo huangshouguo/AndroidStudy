@@ -16,13 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.StartActivity" />
-        <activity android:name=".activity.TargetActivity">
+        <activity android:name=".activity.start.StartActivity" />
+        <activity android:name=".activity.start.TargetActivity">
             <intent-filter>
                 <action android:name="com.example.study.START_ACTION" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.lifecycle.LifecycleActivity" />
+        <activity android:name=".activity.lifecycle.Lifecycle2Activity" />
+        <activity
+            android:name=".activity.lifecycle.LifecycleDialogActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
     </application>
 
 </manifest>

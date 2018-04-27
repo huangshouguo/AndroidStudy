@@ -5,19 +5,25 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.start.TargetActivity">
-
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="congratulations! welcome to this target activity"
-        android:textSize="16dp" />
+    tools:context=".activity.lifecycle.LifecycleActivity">
 
     <Button
-        android:id="@+id/btn_finish"
+        android:id="@+id/btn_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="finish me" />
+        android:text="start another activity" />
+
+    <Button
+        android:id="@+id/btn_activity_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start dialog activity" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start dialog" />
+
+
 </LinearLayout>
