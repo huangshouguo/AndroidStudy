@@ -8,6 +8,7 @@ import android.view.View;
 import com.example.study.activity.lifecycle.LifecycleActivity;
 import com.example.study.activity.mode.ModeActivity;
 import com.example.study.activity.start.StartActivity;
+import com.example.study.broadcast.BroadcastIndexActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_start_activity).setOnClickListener(this);
         findViewById(R.id.btn_lifecycle_activity).setOnClickListener(this);
         findViewById(R.id.btn_mode_activity).setOnClickListener(this);
+        findViewById(R.id.btn_broadcast).setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_mode_activity:
                 ModeActivity.startAction(this);
+                break;
+            case R.id.btn_broadcast:
+                BroadcastIndexActivity.startAction(this);
                 break;
             default:
                 break;
