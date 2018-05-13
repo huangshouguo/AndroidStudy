@@ -56,18 +56,23 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".broadcast.MyStandardBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.example.broadcast.MY_BROADCAST" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".broadcast.MyOrderedBroadcastReceiver">
             <intent-filter android:priority="100">
                 <action android:name="com.example.broadcast.MY_BROADCAST" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".service.ServiceActivity" />
+
+        <service android:name=".service.MyService" />
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false" />
     </application>
 
 </manifest>

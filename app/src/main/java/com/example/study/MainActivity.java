@@ -9,6 +9,7 @@ import com.example.study.activity.lifecycle.LifecycleActivity;
 import com.example.study.activity.mode.ModeActivity;
 import com.example.study.activity.start.StartActivity;
 import com.example.study.broadcast.BroadcastIndexActivity;
+import com.example.study.service.ServiceActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_lifecycle_activity).setOnClickListener(this);
         findViewById(R.id.btn_mode_activity).setOnClickListener(this);
         findViewById(R.id.btn_broadcast).setOnClickListener(this);
+        findViewById(R.id.btn_service).setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_broadcast:
                 BroadcastIndexActivity.startAction(this);
+                break;
+            case R.id.btn_service:
+                ServiceActivity.startAction(this);
                 break;
             default:
                 break;
